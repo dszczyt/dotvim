@@ -86,3 +86,32 @@ set relativenumber
 " Tab Settings
 set smarttab
 set tabstop=8
+
+" utf-8 default encoding
+set enc=utf-8
+
+" Prefer unix over windows over os9 formats
+set fileformats=unix,dos,mac
+
+" don't bell or blink
+set noerrorbells
+set vb t_vb=
+
+" keep some more lines for scope
+set scrolloff=5
+
+" Colorcolumns
+if version >= 730
+  autocmd FileType * setlocal colorcolumn=0
+  autocmd FileType python,c,cpp setlocal colorcolumn=79
+endif
+
+" file types
+" RST
+autocmd BufNewFile,BufRead *.txt setlocal ft=rst
+autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+\ formatoptions+=nqt textwidth=80
+" VIM
+autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
+" CMake
+autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
