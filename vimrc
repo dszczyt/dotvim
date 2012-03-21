@@ -1,5 +1,88 @@
-runtime bundle/pathogen/autoload/pathogen.vim
+" no compatibility to old vis, let's get a decent editor
+set nocompatible
+set backspace=indent,eol,start
 
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
-syntax on
+call pathogen#helptags()
+
+" enable file types
 filetype plugin indent on
+
+" re-map the leader key
+let mapleader=","
+
+" syntax highlighting
+syntax on
+if has("gui_running")
+    colorscheme fruity
+    if has("mac")
+        " lets get fullscreen
+        set fuoptions=maxvert,maxhorz
+    endif
+else
+    colorscheme myterm
+endif
+
+" set terminal title
+" enable automatic title setting for terminals
+set title
+set titleold="Terminal"
+set titlestring=%F
+
+" show line and column in status bar
+set ruler
+if has("gui_running")
+    " highlight cursor line in GUI
+    set cursorline
+endif
+set ttyfast
+
+" customize completion in the wildmenu
+set wildmenu
+set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
+set wildmode=list:full
+
+" smart indenting if there is no specific indent plugin available
+set smartindent
+
+" quick window switching
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Remove trailing whitespace on <leader>S
+nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
+
+" Quit window on <leader>q
+nnoremap <leader>q :q<CR>
+
+" toggle between number and relative number on ,l
+nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
+function! ToggleRelativeAbsoluteNumber()
+  if &number
+    set relativenumber
+  else
+    set number
+  endif
+endfunction
+
+" Easy acking
+nnoremap <leader>a :Ack
+
+" Easy gitting
+nnoremap <leader>gs :Gstatus
+nnoremap <leader>gc :Gcommit
+
+" Make the command line two lines high and change the statusline display to
+" something that looks useful.
+set cmdheight=2
+set laststatus=2
+set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
+set showcmd
+set relativenumber
+
+" Tab Settings
+set smarttab
+set tabstop=8
