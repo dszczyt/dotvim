@@ -89,6 +89,10 @@ set relativenumber
 set smarttab
 set tabstop=8
 
+" Better Search
+set hlsearch
+set incsearch
+
 " utf-8 default encoding
 set enc=utf-8
 
