@@ -138,7 +138,8 @@ let python_print_as_function=1
 " RST
 autocmd BufNewFile,BufRead *.txt setlocal ft=rst
 autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-\ formatoptions+=nqt textwidth=80
+autocmd FileType rst setlocal formatoptions+=nqt
+autocmd FileType rst setlocal textwidth=80
 " VIM
 autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
 " CMake
