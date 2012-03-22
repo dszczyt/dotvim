@@ -117,7 +117,9 @@ endif
 
 " file types
 " Python
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+autocmd FileType python setlocal formatoptions+=croq
+" highlight as much as possible
 let python_highlight_all=1
 let python_slow_sync=1
 let python_print_as_function=1
