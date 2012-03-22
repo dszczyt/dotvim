@@ -130,6 +130,7 @@ endif
 " Python
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 autocmd FileType python setlocal formatoptions+=croq
+autocmd FileType python setlocal textwidth=79
 " highlight as much as possible
 let python_highlight_all=1
 let python_slow_sync=1
