@@ -30,6 +30,9 @@ set title
 set titleold="Terminal"
 set titlestring=%F
 
+" hide buffers instead of closing them
+set hidden
+
 " show line and column in status bar
 set ruler
 if has("gui_running")
