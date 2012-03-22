@@ -72,8 +72,7 @@ endfunction
 nnoremap <leader>a :Ack
 
 " Easy gitting
-nnoremap <leader>gs :Gstatus
-nnoremap <leader>gc :Gcommit
+nnoremap <leader>g :Gstatus<CR>
 
 " Make the command line two lines high and change the statusline display to
 " something that looks useful.
