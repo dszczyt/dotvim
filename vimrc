@@ -113,6 +113,11 @@ if version >= 730
 endif
 
 " file types
+" Python
+autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+let python_highlight_all=1
+let python_slow_sync=1
+let python_print_as_function=1
 " RST
 autocmd BufNewFile,BufRead *.txt setlocal ft=rst
 autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
