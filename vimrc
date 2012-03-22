@@ -77,6 +77,9 @@ nnoremap <leader>a :Ack
 " Easy gitting
 nnoremap <leader>g :Gstatus<CR>
 
+" nerdy trees
+nnoremap <leader>t :NERDTree<CR>
+
 " Make the command line two lines high and change the statusline display to
 " something that looks useful.
 set cmdheight=2
