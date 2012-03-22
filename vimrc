@@ -74,6 +74,8 @@ endfunction
 " Easy acking
 nnoremap <leader>a :Ack
 
+" buffer exploration
+nnoremap <leader>b :MiniBufExplorer<CR>
 " Easy gitting
 nnoremap <leader>g :Gstatus<CR>
 
