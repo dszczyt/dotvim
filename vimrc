@@ -55,14 +55,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Remove trailing whitespace on <leader>S
-nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
-
-" Quit window on <leader>q
-nnoremap <leader>q :q<CR>
-
-" toggle between number and relative number on ,l
-nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
+" toggle between relative and absolute line numbers
 function! ToggleRelativeAbsoluteNumber()
   if &number
     set relativenumber
@@ -71,16 +64,32 @@ function! ToggleRelativeAbsoluteNumber()
   endif
 endfunction
 
+" leader key mappings
+" Keep these alphabetically sorted!
+
 " Easy acking
 nnoremap <leader>a :Ack
 
 " buffer exploration
 nnoremap <leader>b :MiniBufExplorer<CR>
+
 " Easy gitting
 nnoremap <leader>g :Gstatus<CR>
 
+" toggle between number and relative number on ,l
+nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
+
+" Quit window on <leader>q
+nnoremap <leader>q :q<CR>
+
+" Easy undoing
+nnoremap <leader>u :GundoToggle<CR>
+
 " nerdy trees
 nnoremap <leader>t :NERDTree<CR>
+
+" Remove trailing whitespace on <leader>S
+nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Make the command line two lines high and change the statusline display to
 " something that looks useful.
