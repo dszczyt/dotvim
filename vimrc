@@ -73,6 +73,12 @@ nnoremap <leader>a :Ack
 " buffer exploration
 nnoremap <leader>b :MiniBufExplorer<CR>
 
+" commenting with commentary
+xmap <leader>c <Plug>Commentary
+nmap <leader>c <Plug>Commentary
+nmap <leader>C <Plug>CommentaryLine
+nmap <leader>cu <Plug>CommentaryUndo
+
 " Easy gitting
 nnoremap <leader>g :Gstatus<CR>
 
