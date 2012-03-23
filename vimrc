@@ -15,13 +15,13 @@ let mapleader=","
 " syntax highlighting
 syntax on
 if has("gui_running")
-    colorscheme fruity
-    if has("mac")
-        " lets get fullscreen
-        set fuoptions=maxvert,maxhorz
-    endif
+  colorscheme fruity
+  if has("mac")
+    " lets get fullscreen
+    set fuoptions=maxvert,maxhorz
+  endif
 else
-    colorscheme myterm
+  colorscheme myterm
 endif
 
 " no toolbar in GUI
@@ -39,8 +39,8 @@ set hidden
 " show line and column in status bar
 set ruler
 if has("gui_running")
-    " highlight cursor line in GUI
-    set cursorline
+  " highlight cursor line in GUI
+  set cursorline
 endif
 set ttyfast
 
