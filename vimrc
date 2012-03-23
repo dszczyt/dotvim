@@ -17,6 +17,7 @@ syntax on
 if has("gui_running")
   colorscheme fruity
   if has("mac")
+    set guifont=Consolas:h13
     " lets get fullscreen
     set fuoptions=maxvert,maxhorz
   endif

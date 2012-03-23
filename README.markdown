@@ -24,6 +24,12 @@ configuration][arvim], but I've also installed some other schemes:
   Ronacher's][ar] [vim configuration][arvim])
 - [solarized light and dark][solarized]
 
+The font used is Consolas, a proprietary font from Microsoft shipped with
+various Microsoft products like Visual Studio or Microsoft Office.  Hence
+you'll need a license for any of these products, if you want to use this font,
+too.  Alternatively you can use Inconsolata, a free replacement for Consolas,
+which is generally equivalent, though less fancy in my opinion.
+
 
 ### Version control
 
@@ -80,7 +86,6 @@ TODO
 
 What remains to be done in this configuration:
 
-- Use consolas as font
 - Add supertab, ropevim and command-t
 - Integrate tox into Python to test straight from Vim
 
