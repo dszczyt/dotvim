@@ -122,25 +122,39 @@ set scrolloff=5
 
 " Colorcolumns
 if version >= 730
-  autocmd FileType * setlocal colorcolumn=0
-  autocmd FileType python,c,cpp setlocal colorcolumn=79
+  augroup colorcolums
+    autocmd FileType * setlocal colorcolumn=0
+    autocmd FileType python,c,cpp setlocal colorcolumn=79
+  augroup END
 endif
 
 " file types
 " Python
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
-autocmd FileType python setlocal formatoptions+=croq
-autocmd FileType python setlocal textwidth=79
+augroup filetype_python
+  autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+  autocmd FileType python setlocal formatoptions+=croq
+  autocmd FileType python setlocal textwidth=79
+augroup END
 " highlight as much as possible
 let python_highlight_all=1
 let python_slow_sync=1
 let python_print_as_function=1
+
 " RST
-autocmd BufNewFile,BufRead *.txt setlocal ft=rst
-autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-autocmd FileType rst setlocal formatoptions+=nqt
-autocmd FileType rst setlocal textwidth=80
+augroup filetype_rst
+  autocmd BufNewFile,BufRead *.txt setlocal ft=rst
+  autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+  autocmd FileType rst setlocal formatoptions+=nqt
+  autocmd FileType rst setlocal textwidth=80
+augroup END
+
 " VIM
-autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
+augroup filetype_vim
+  autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
+augroup END
+
 " CMake
-autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
+augroup filetype_cmake
+  autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
+augroup END
+
