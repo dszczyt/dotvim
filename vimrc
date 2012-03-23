@@ -24,6 +24,9 @@ else
     colorscheme myterm
 endif
 
+" no toolbar in GUI
+set guioptions-=T
+
 " set terminal title
 " enable automatic title setting for terminals
 set title
