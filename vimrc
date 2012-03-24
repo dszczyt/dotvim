@@ -158,6 +158,18 @@ augroup END
 let python_highlight_all=1
 let python_slow_sync=1
 let python_print_as_function=1
+" code completion for modules in the current virtualenv (only if vim is
+" started from within a virtualenv)
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
 
 " RST
 augroup filetype_rst
