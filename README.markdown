@@ -2,7 +2,7 @@
 
 My Vim configuration for Python programming and possibly other stuff.  Since
 I've been using Emacs hitherto and am fairly new to Vim, this is somewhat
-ragged and incomplete.  Ideas for improvement or cool new tricks are welcome! 
+ragged and incomplete.  Ideas for improvement or cool new tricks are welcome!
 
 
 ## Plugins
@@ -47,6 +47,7 @@ Utilities for text editing and programming:
 - [repeat][repeat] any command
 - Comment text with [commentary][commentary]
 - Text snippets with [snipmate][snipmate]
+- Tab key completion powered by [supertab][supertab]
 - Graphical undo and redo with [Gundo][gundo]
 - Check syntax with [syntastic][syntastic]
 - Don't grep, [ack][ack] ftw
@@ -86,7 +87,7 @@ TODO
 
 What remains to be done in this configuration:
 
-- Add supertab, ropevim and command-t
+- Add ropevim and command-t
 - Integrate tox into Python to test straight from Vim
 
 
@@ -102,6 +103,7 @@ What remains to be done in this configuration:
 [repeat]: https://github.com/tpope/vim-repeat
 [commentary]: https://github.com/tpope/vim-commentary
 [snipmate]: https://github.com/msanders/snipmate.vim
+[supertab]: https://github.com/ervandew/supertab
 [gundo]: https://github.com/sjl/gundo.vim
 [syntastic]: https://github.com/scrooloose/syntastic
 [ack]: https://github.com/mileszs/ack.vim

@@ -130,6 +130,13 @@ set vb t_vb=
 " keep some more lines for scope
 set scrolloff=5
 
+" context-sensitive completion
+let g:SuperTabDefaultCompletionType = "context"
+" Enable preview (e.g. pydoc for Python completion) and popup menu (even for a
+" single match to always see the preview) and insert the longest common prefix
+" of all completions automatically
+set completeopt=preview,menuone,longest
+
 " Colorcolumns
 if version >= 730
   augroup colorcolums
@@ -144,6 +151,8 @@ augroup filetype_python
   autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
   autocmd FileType python setlocal formatoptions+=croq
   autocmd FileType python setlocal textwidth=79
+  " Python completion
+  autocmd FileType python set omnifunc=pythoncomplete#Complete
 augroup END
 " highlight as much as possible
 let python_highlight_all=1
