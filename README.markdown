@@ -55,14 +55,12 @@ Utilities for text editing and programming:
 
 ### Python support
 
-Python indentation and syntax support is provided by
-[indent/python.vim][python-indent] and [python.vim][python-syntax] (not
-available for use with [pathogen][pathogen] and hence copied straight into this
-repository).
-
-[syntastic][syntastic] checking of Python code is powered by [`flake8`][flake8]
-which integrates [`pyflakes`][pyflakes] for error checking and [`pep8`][pep8]
-for style checking.
+- Highlight Python nicely with [python.vim][python-syntax]
+- Indent Python correctly (as by PEP 8) with [indent/python.vim][python-indent]
+- Check Python syntax and style with [syntastic][syntastic] and
+  [`flake8`][flake8], which integrates [`pyflakes`][pyflakes] for error
+  checking and [`pep8`][pep8] for style checking
+- View Python documentation within vim with [pydoc.vim][pydoc]
 
 
 ### Other languages
@@ -87,8 +85,8 @@ TODO
 
 What remains to be done in this configuration:
 
-- Add ropevim and command-t
-- Integrate tox into Python to test straight from Vim
+- Add py.test, ropevim and command-t
+- Integrate tox into Python to test straight from Vim?
 
 
 [pathogen]: https://github.com/tpope/vim-pathogen
@@ -112,6 +110,7 @@ What remains to be done in this configuration:
 [flake8]: http://pypi.python.org/pypi/flake8
 [pyflakes]: http://pypi.python.org/pypi/pyflakes
 [pep8]: http://pypi.python.org/pypi/pep8
+[pydoc]: https://github.com/fs111/pydoc.vim
 [markdown]: https://github.com/tpope/vim-markdown
 [vim-ide]: http://sontek.net/turning-vim-into-a-modern-python-ide
 [coming-home]: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
