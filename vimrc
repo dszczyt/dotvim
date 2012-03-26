@@ -107,7 +107,7 @@ set cmdheight=2
 set laststatus=2
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 set showcmd
-if version >= 730
+if version >= 703
   set relativenumber
 else
   set number
@@ -142,7 +142,7 @@ let g:SuperTabDefaultCompletionType = "context"
 set completeopt=preview,menuone,longest
 
 " Colorcolumns
-if version >= 730
+if version >= 703
   augroup colorcolums
     autocmd FileType * setlocal colorcolumn=0
     autocmd FileType python,c,cpp setlocal colorcolumn=79
