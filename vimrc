@@ -85,6 +85,8 @@ nmap <leader>cu <Plug>CommentaryUndo
 
 " Easy gitting
 nnoremap <leader>g :Gstatus<CR>
+" Easy gisting
+nnoremap <leader>G :Gist
 
 " toggle between number and relative number on ,l
 nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
@@ -140,6 +142,16 @@ let g:SuperTabDefaultCompletionType = "context"
 " single match to always see the preview) and insert the longest common prefix
 " of all completions automatically
 set completeopt=preview,menuone,longest
+
+" detect filetypes in gist and open new gists in browser
+let g:gist_detect_filetype = 1
+let g:gist_open_browser_after_post = 1
+" configure clipboard command for :Gist -c
+if has("mac")
+  let g:gist_clip_command = 'pbcopy'
+elseif has("unix")
+  let g:gist_clip_command = 'xclip -selection clipboard'
+endif
 
 " Colorcolumns
 if version >= 703

@@ -37,6 +37,7 @@ Integrate various VCS into vim:
 
 - Highlight git configuration files with [git-vim][git-vim]
 - `git` from within Vim with [fugitive][fugitive]
+- Create gists from within Vim with [gist-vim][gist]
 
 
 ### Editing and programming
@@ -97,6 +98,7 @@ What remains to be done in this configuration:
 [solarized]: https://github.com/altercation/vim-colors-solarized
 [git-vim]: https://github.com/tpope/vim-git
 [fugitive]: https://github.com/tpope/vim-fugitive
+[gist]: https://github.com/mattn/gist-vim
 [surround]: https://github.com/tpope/vim-surround
 [repeat]: https://github.com/tpope/vim-repeat
 [commentary]: https://github.com/tpope/vim-commentary
