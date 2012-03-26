@@ -183,6 +183,11 @@ augroup filetype_rst
   autocmd FileType rst setlocal textwidth=80
 augroup END
 
+" ZSH
+augroup filetype_zsh
+  autocmd FileType zsh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+augroup END
+
 " VIM
 augroup filetype_vim
   autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
