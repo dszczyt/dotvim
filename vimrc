@@ -107,7 +107,11 @@ set cmdheight=2
 set laststatus=2
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 set showcmd
-set relativenumber
+if version >= 730
+  set relativenumber
+else
+  set number
+endif
 
 " Tab Settings
 set smarttab
