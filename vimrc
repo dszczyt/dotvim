@@ -75,7 +75,8 @@ endfunction
 nnoremap <leader>a :Ack
 
 " buffer exploration
-nnoremap <leader>b :MiniBufExplorer<CR>
+" <leader>b is :CommandTBuffer (mapped by command-t)
+nnoremap <leader>B :MiniBufExplorer<CR>
 
 " commenting with commentary
 xmap <leader>c <Plug>Commentary
@@ -98,7 +99,8 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>u :GundoToggle<CR>
 
 " nerdy trees
-nnoremap <leader>t :NERDTree<CR>
+" <leader>t is :CommandT (mapped by command-t)
+nnoremap <leader>T :NERDTree<CR>
 
 " Remove trailing whitespace on <leader>S
 nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>

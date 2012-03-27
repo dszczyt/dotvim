@@ -13,6 +13,8 @@ I'm using the following plugins (managed with [Pathogen][pathogen] of course):
 
 Some nice extensions to the user interface:
 
+- Open files super-fast and super-easy with [Command-T][command-t].  It also
+  switches buffers the same fancy way.
 - Explore files and projects with [NerdTree][nerdtree]
 - Tame wild buffers with a nice buffer list provided by
   [MiniBufExplorer][minibufexpl]
@@ -86,11 +88,12 @@ TODO
 
 What remains to be done in this configuration:
 
-- Add py.test, ropevim and command-t
+- Add py.test and ropevim
 - Integrate tox into Python to test straight from Vim?
 
 
 [pathogen]: https://github.com/tpope/vim-pathogen
+[command-t]:https://github.com/wincent/Command-T
 [nerdtree]: https://github.com/scrooloose/nerdtree
 [MiniBufExplorer]: https://github.com/fholgado/minibufexpl.vim
 [ar]: https://github.com/mitsuhiko
