@@ -197,6 +197,12 @@ augroup filetype_rst
   autocmd FileType rst setlocal textwidth=80
 augroup END
 
+" Markdown
+augroup filetype_markdown
+  autocmd FileType markdown setlocal formatoptions+=nqt
+  autocmd FileType markdown setlocal textwidth=80
+augroup END
+
 " HTML
 augroup filetype_html
   autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
