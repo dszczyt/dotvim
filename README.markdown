@@ -26,11 +26,11 @@ configuration][arvim], but I've also installed some other schemes:
   Ronacher's][ar] [vim configuration][arvim])
 - [solarized light and dark][solarized]
 
-The font used is Consolas, a proprietary font from Microsoft shipped with
-various Microsoft products like Visual Studio or Microsoft Office.  Hence
-you'll need a license for any of these products, if you want to use this font,
-too.  Alternatively you can use Inconsolata, a free replacement for Consolas,
-which is generally equivalent, though less fancy in my opinion.
+The font used is [Consolas][consolas], a proprietary font from Microsoft, which
+can be [downloaded from Microsoft][consolasdownload] at no cost. If you prefer a
+free font, that a look at [Inconsolata][inconsolata], which is influenced by
+Consolas. It is generally equivalent in appearance, but less fancy in my
+opinion.
 
 
 ### Version control
@@ -104,6 +104,9 @@ What remains to be done in this configuration:
 [ar]: https://github.com/mitsuhiko
 [arvim]: https://github.com/mitsuhiko/dotfiles/tree/master/vim
 [solarized]: https://github.com/altercation/vim-colors-solarized
+[consolas]: http://en.wikipedia.org/wiki/Consolas
+[consolasdownload]: http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17879
+[inconsolata]: http://en.wikipedia.org/wiki/Inconsolata
 [git-vim]: https://github.com/tpope/vim-git
 [fugitive]: https://github.com/tpope/vim-fugitive
 [gist]: https://github.com/mattn/gist-vim
