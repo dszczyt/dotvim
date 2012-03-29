@@ -25,6 +25,7 @@ configuration][arvim], but I've also installed some other schemes:
 - `summerfruit`, `myterm` and `pyte` (all also taken from [Armin
   Ronacher's][ar] [vim configuration][arvim])
 - [solarized light and dark][solarized]
+- [InkPot][inkpot]
 
 The font used is [Consolas][consolas], a proprietary font from Microsoft, which
 can be [downloaded from Microsoft][consolasdownload] at no cost. If you prefer a
@@ -104,6 +105,8 @@ What remains to be done in this configuration:
 [ar]: https://github.com/mitsuhiko
 [arvim]: https://github.com/mitsuhiko/dotfiles/tree/master/vim
 [solarized]: https://github.com/altercation/vim-colors-solarized
+[inkpot]: https://github.com/ciaranm/inkpot
+[zenburn]: https://github.com/jnurmine/Zenburn
 [consolas]: http://en.wikipedia.org/wiki/Consolas
 [consolasdownload]: http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17879
 [inconsolata]: http://en.wikipedia.org/wiki/Inconsolata
