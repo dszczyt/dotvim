@@ -203,6 +203,11 @@ augroup filetype_markdown
   autocmd FileType markdown setlocal textwidth=80
 augroup END
 
+" CSS
+augroup filetype_css
+  autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+augroup END
+
 " HTML
 augroup filetype_html
   autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
