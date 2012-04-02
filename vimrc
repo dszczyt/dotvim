@@ -178,7 +178,8 @@ let python_slow_sync=1
 let python_print_as_function=1
 " code completion for modules in the current virtualenv (only if vim is
 " started from within a virtualenv)
-py << EOF
+if has("python")
+  py << EOF
 import os.path
 import sys
 import vim
@@ -188,6 +189,7 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
+endif
 
 " RST
 augroup filetype_rst
