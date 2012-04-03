@@ -94,6 +94,9 @@ nmap <leader>c <Plug>Commentary
 nmap <leader>C <Plug>CommentaryLine
 nmap <leader>cu <Plug>CommentaryUndo
 
+" edit vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+
 " Easy gitting
 nnoremap <leader>g :Gstatus<CR>
 " Easy gisting
