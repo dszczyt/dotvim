@@ -57,6 +57,12 @@ set smartindent
 inoremap jk <esc>
 inoremap <esc> <nop>
 
+" disable arrow keys to teach me how to use Vim properly
+noremap <Down> <nop>
+noremap <Up> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
 " quick window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
