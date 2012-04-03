@@ -53,6 +53,10 @@ set wildmode=list:full
 " smart indenting if there is no specific indent plugin available
 set smartindent
 
+" let's get normal
+inoremap jk <esc>
+inoremap <esc> <nop>
+
 " quick window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
