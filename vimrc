@@ -204,6 +204,9 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 endif
 
+" Ruby
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+
 " RST
 augroup filetype_rst
   autocmd BufNewFile,BufRead *.txt setlocal ft=rst
