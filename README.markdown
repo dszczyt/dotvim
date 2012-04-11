@@ -26,6 +26,7 @@ configuration][arvim], but I've also installed some other schemes:
   Ronacher's][ar] [vim configuration][arvim])
 - [solarized light and dark][solarized]
 - [InkPot][inkpot]
+- [ZenBurn][zenburn]
 
 The font used is [Consolas][consolas], a proprietary font from Microsoft, which
 can be [downloaded from Microsoft][consolasdownload] at no cost. If you prefer a
@@ -132,4 +133,3 @@ What remains to be done in this configuration:
 [vim-ide]: http://sontek.net/turning-vim-into-a-modern-python-ide
 [coming-home]: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 [tpope]: https://github.com/tpope
-
