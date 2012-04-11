@@ -122,7 +122,7 @@ nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 " something that looks useful.
 set cmdheight=2
 set laststatus=2
-set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
+set statusline=[%l,%v\ %P%M]\ %f\ %y%r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 set showcmd
 if version >= 703
   set relativenumber
