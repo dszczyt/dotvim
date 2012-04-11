@@ -205,7 +205,9 @@ EOF
 endif
 
 " Ruby
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+augroup filetype_ruby
+  autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+augroup END
 
 " RST
 augroup filetype_rst
