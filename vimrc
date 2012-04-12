@@ -51,8 +51,8 @@ set wildmenu
 set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
 set wildmode=list:full
 
-" smart indenting if there is no specific indent plugin available
-set smartindent
+" auto indentation
+set autoindent
 
 " let's get normal
 inoremap jk <esc>
