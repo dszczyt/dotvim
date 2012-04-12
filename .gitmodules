@@ -61,3 +61,6 @@
 [submodule "bundle/zenburn"]
 	path = bundle/zenburn
 	url = https://github.com/jnurmine/Zenburn.git
+[submodule "bundle/threesome"]
+	path = bundle/threesome
+	url = https://github.com/sjl/threesome.vim.git
