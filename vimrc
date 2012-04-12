@@ -70,6 +70,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Formatting the easy way
+nnoremap Q gqip
+vnoremap Q gq
+
 " toggle between relative and absolute line numbers
 function! ToggleRelativeAbsoluteNumber()
   if &number
