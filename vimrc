@@ -11,6 +11,7 @@ filetype plugin indent on
 
 " re-map the leader key
 let mapleader=","
+let maplocalleader="-"
 
 " syntax highlighting
 syntax on
