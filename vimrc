@@ -244,7 +244,7 @@ augroup END
 
 " ZSH
 augroup filetype_zsh
-  autocmd FileType zsh setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+  autocmd FileType zsh setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
 augroup END
 
 " VIM
