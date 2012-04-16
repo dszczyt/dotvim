@@ -181,7 +181,7 @@ endif
 if version >= 703
   augroup colorcolums
     autocmd FileType * setlocal colorcolumn=0
-    autocmd FileType python,c,cpp setlocal colorcolumn=79
+    autocmd FileType python,c,cpp,javascript setlocal colorcolumn=79
   augroup END
 endif
 
