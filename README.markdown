@@ -74,6 +74,11 @@ Utilities for text editing and programming:
 - Conveniently insert tags with [ZenCoding][zencoding]
 
 
+### CoffeeScript support
+
+- Edit CoffeeScript with help of [vim-coffee-script][vim-coffee-script]
+
+
 ### Other languages
 
 - [markdown][markdown] support
@@ -131,6 +136,7 @@ What remains to be done in this configuration:
 [pep8]: http://pypi.python.org/pypi/pep8
 [pydoc]: https://github.com/fs111/pydoc.vim
 [zencoding]: http://mattn.github.com/zencoding-vim/
+[vim-coffee-script]: https://github.com/kchmck/vim-coffee-script
 [markdown]: https://github.com/tpope/vim-markdown
 [vim-ide]: http://sontek.net/turning-vim-into-a-modern-python-ide
 [coming-home]: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
