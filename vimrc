@@ -247,6 +247,11 @@ augroup filetype_javascript
   autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
 
+" XML
+augroup filetype_xml
+  autocmd FileType xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+augroup END
+
 " ZSH
 augroup filetype_zsh
   autocmd FileType zsh setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
