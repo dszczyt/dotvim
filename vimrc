@@ -247,6 +247,11 @@ augroup filetype_javascript
   autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
 
+" CoffeeScript
+augroup filetype_coffeescript
+  autocmd FileType coffee setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+augroup END
+
 " XML
 augroup filetype_xml
   autocmd FileType xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
