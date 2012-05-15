@@ -233,6 +233,8 @@ augroup filetype_latex
 augroup END
 " Make VIM use LaTeX suite
 let g:tex_flavor='latex'
+" Use LuaLaTeX to compile to PDF
+let g:Tex_CompileRule_pdf = 'lualatex --interaction=nonstopmode $*'
 
 " Markdown
 augroup filetype_markdown
