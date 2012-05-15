@@ -82,6 +82,7 @@ Utilities for text editing and programming:
 ### Other languages
 
 - [markdown][markdown] support
+- LaTeX editing with [LaTeX-suite][latex]
 
 
 Credits
@@ -138,6 +139,7 @@ What remains to be done in this configuration:
 [zencoding]: http://mattn.github.com/zencoding-vim/
 [vim-coffee-script]: https://github.com/kchmck/vim-coffee-script
 [markdown]: https://github.com/tpope/vim-markdown
+[latex]: http://vim-latex.sourceforge.net/
 [vim-ide]: http://sontek.net/turning-vim-into-a-modern-python-ide
 [coming-home]: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 [tpope]: https://github.com/tpope
