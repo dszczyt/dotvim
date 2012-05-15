@@ -56,7 +56,7 @@ Utilities for text editing and programming:
 - Graphical undo and redo with [Gundo][gundo]
 - Check syntax with [syntastic][syntastic]
 - Don't grep, [ack][ack] ftw
-- Three way diffing and merging with [threesome][threesome]
+- Three way diffing and merging with [splice][splice]
 
 
 ### Python support
@@ -128,7 +128,7 @@ What remains to be done in this configuration:
 [gundo]: https://github.com/sjl/gundo.vim
 [syntastic]: https://github.com/scrooloose/syntastic
 [ack]: https://github.com/mileszs/ack.vim
-[threesome]: https://github.com/sjl/threesome.vim
+[splice]: https://github.com/sjl/splice.vim
 [python-indent]: http://www.vim.org/scripts/script.php?script_id=974
 [python-syntax]: http://www.vim.org/scripts/script.php?script_id=790
 [flake8]: http://pypi.python.org/pypi/flake8
