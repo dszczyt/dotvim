@@ -235,6 +235,13 @@ augroup END
 let g:tex_flavor='latex'
 " Use LuaLaTeX to compile to PDF
 let g:Tex_CompileRule_pdf = 'lualatex --interaction=nonstopmode $*'
+" Fix viewing
+let g:Tex_TreatMacViewerAsUNIX = 1
+if has("mac")
+  let g:Tex_ViewRule_pdf = 'open'
+elseif has("unix")
+  let g:Tex_ViewRule_pdf = 'xdg-open'
+endif
 
 " Markdown
 augroup filetype_markdown
