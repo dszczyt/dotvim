@@ -61,7 +61,6 @@ Utilities for text editing and programming:
 
 ### Python support
 
-- Highlight Python nicely with [python.vim][python-syntax]
 - Indent Python correctly (as by PEP 8) with [indent/python.vim][python-indent]
 - Check Python syntax and style with [syntastic][syntastic] and
   [`flake8`][flake8], which integrates [`pyflakes`][pyflakes] for error

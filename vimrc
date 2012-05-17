@@ -196,8 +196,6 @@ augroup filetype_python
 augroup END
 " highlight as much as possible
 let python_highlight_all=1
-let python_slow_sync=1
-let python_print_as_function=1
 " code completion for modules in the current virtualenv (only if vim is
 " started from within a virtualenv)
 if has("python")
