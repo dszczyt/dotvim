@@ -19,14 +19,14 @@ Some nice extensions to the user interface:
 - Tame wild buffers with a nice buffer list provided by
   [MiniBufExplorer][minibufexpl]
 
-The default color scheme is `fruity`, taken from [Armin Ronacher's][ar] [vim
-configuration][arvim], but I've also installed some other schemes:
+The default color scheme is [Solarized light][solarized], a nice low-contrast
+colorscheme that really pleases the eye even after hours of work. Additionally
+I've installed a bunch of other schemes, but hardly use them:
 
-- `summerfruit`, `myterm` and `pyte` (all also taken from [Armin
-  Ronacher's][ar] [vim configuration][arvim])
-- [solarized light and dark][solarized]
 - [InkPot][inkpot]
 - [ZenBurn][zenburn]
+- `summerfruit`, `myterm` and `pyte` (all also taken from [Armin
+  Ronacher's][ar] [vim configuration][arvim])
 
 The font used is [Consolas][consolas], a proprietary font from Microsoft, which
 can be [downloaded from Microsoft][consolasdownload] at no cost. If you prefer a

@@ -15,15 +15,12 @@ let maplocalleader="-"
 
 " syntax highlighting
 syntax on
-if has("gui_running")
-  colorscheme fruity
-  if has("mac")
-    set guifont=Consolas:h13
-    " lets get fullscreen
-    set fuoptions=maxvert,maxhorz
-  endif
-else
-  colorscheme myterm
+colorscheme solarized
+set background=light
+if has("gui_running") && has("mac")
+  set guifont=Consolas:h13
+  " lets get fullscreen
+  set fuoptions=maxvert,maxhorz
 endif
 
 " no toolbar in GUI
