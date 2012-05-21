@@ -284,3 +284,8 @@ augroup filetype_cmake
   autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
 augroup END
 
+" C/C++
+augroup filetype_c
+  autocmd FileType c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+  autocmd FileType cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+augroup END
