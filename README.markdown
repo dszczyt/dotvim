@@ -4,8 +4,8 @@ My Vim configuration for Python programming and possibly other stuff.  Since
 I've been using Emacs hitherto and am fairly new to Vim, this is somewhat
 ragged and incomplete.  Ideas for improvement or cool new tricks are welcome!
 
-
-## Plugins
+Plugins
+-------
 
 I'm using the following plugins (managed with [Pathogen][] of course):
 
@@ -32,7 +32,6 @@ The font used is [Consolas][], a proprietary font from Microsoft, which can be
 font, that a look at [Inconsolata][], which is influenced by Consolas. It is
 generally equivalent in appearance, but less fancy in my opinion.
 
-
 ### Version control
 
 Integrate various VCS into vim:
@@ -40,7 +39,6 @@ Integrate various VCS into vim:
 - Highlight git configuration files with [git-vim][]
 - `git` from within Vim with [fugitive][]
 - Create gists from within Vim with [gist-vim][]
-
 
 ### Editing and programming
 
@@ -59,7 +57,6 @@ Utilities for text editing and programming:
 - Preview all sorts of markup with [Hammer][] (requires `gem install
   github-markup tilt`)
 
-
 ### Python support
 
 - Indent Python correctly (as by PEP 8) with
@@ -69,22 +66,18 @@ Utilities for text editing and programming:
   style checking
 - View Python documentation within vim with [pydoc.vim][pydoc]
 
-
 ### HTML and CSS support
 
 - Conveniently insert tags with [ZenCoding][]
-
 
 ### CoffeeScript support
 
 - Edit CoffeeScript with help of [vim-coffee-script][]
 
-
 ### Other languages
 
 - [markdown][] support
 - LaTeX editing with [LaTeX-suite][latex]
-
 
 Credits
 -------
@@ -96,7 +89,6 @@ Credits for this Vim configuration go to:
 - John Anderson for his article [Turning Vim into a modern Python IDE][vim-ide]
 - Steve Losh for his article [Coming Home to Vim][coming-home]
 - [Tim Pope][tpope] for [pathogen][pathogen] and all his other awesome Vim plugins
-
 
 TODO
 ----
