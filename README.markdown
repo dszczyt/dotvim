@@ -130,7 +130,6 @@ What remains to be done in this configuration:
 [hammer]: https://github.com/matthias-guenther/hammer.vim
 [endwise]: https://github.com/tpope/vim-endwise
 [python-indent]: http://www.vim.org/scripts/script.php?script_id=974
-[python-syntax]: http://www.vim.org/scripts/script.php?script_id=790
 [flake8]: http://pypi.python.org/pypi/flake8
 [pyflakes]: http://pypi.python.org/pypi/pyflakes
 [pep8]: http://pypi.python.org/pypi/pep8
