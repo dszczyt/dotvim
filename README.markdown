@@ -53,7 +53,7 @@ Utilities for text editing and programming:
 - Graphical undo and redo with [Gundo][]
 - Check syntax with [syntastic][]
 - Don't grep, [ack][] ftw
-- Three way diffing and merging with [splice][]
+- Diff and merge in three dimensions with [splice][]
 - Preview all sorts of markup with [Hammer][] (requires `gem install
   github-markup tilt`)
 
