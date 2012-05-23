@@ -58,6 +58,7 @@ Utilities for text editing and programming:
   github-markup tilt`)
 - Automatically end structures in Ruby, Vim and shell with [endwise][]
 - Narrow regions like Emacs with [NrrwRgn][]
+- Use text objects defined by indentation with [indent-object][]
 
 ### Python support
 
@@ -131,6 +132,7 @@ What remains to be done in this configuration:
 [hammer]: https://github.com/matthias-guenther/hammer.vim
 [endwise]: https://github.com/tpope/vim-endwise
 [nrrwrgn]: https://github.com/chrisbra/NrrwRgn
+[indent-object]: https://github.com/michaeljsmith/vim-indent-object
 [python-indent]: http://www.vim.org/scripts/script.php?script_id=974
 [flake8]: http://pypi.python.org/pypi/flake8
 [pyflakes]: http://pypi.python.org/pypi/pyflakes
