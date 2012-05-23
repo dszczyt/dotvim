@@ -15,7 +15,6 @@ Some nice extensions to the user interface:
 
 - Open files and buffer super-fast and super-easy with [ctrlp][]
 - Explore files and projects with [NerdTree][]
-- Tame wild buffers with a nice buffer list provided by [MiniBufExplorer][]
 
 The default color scheme is [Solarized light][solarized], a nice low-contrast
 colorscheme that really pleases the eye even after hours of work. Additionally
@@ -104,7 +103,6 @@ What remains to be done in this configuration:
 [pathogen]: https://github.com/tpope/vim-pathogen
 [ctrlp]: https://github.com/kien/ctrlp.vim
 [nerdtree]: https://github.com/scrooloose/nerdtree
-[MiniBufExplorer]: https://github.com/fholgado/minibufexpl.vim
 [ar]: https://github.com/mitsuhiko
 [arvim]: https://github.com/mitsuhiko/dotfiles/tree/master/vim
 [solarized]: https://github.com/altercation/vim-colors-solarized
