@@ -13,8 +13,7 @@ I'm using the following plugins (managed with [Pathogen][] of course):
 
 Some nice extensions to the user interface:
 
-- Open files super-fast and super-easy with [Command-T][].  It also switches
-  buffers the same fancy way.
+- Open files and buffer super-fast and super-easy with [ctrlp][]
 - Explore files and projects with [NerdTree][]
 - Tame wild buffers with a nice buffer list provided by [MiniBufExplorer][]
 
@@ -103,7 +102,7 @@ What remains to be done in this configuration:
 
 
 [pathogen]: https://github.com/tpope/vim-pathogen
-[command-t]:https://github.com/wincent/Command-T
+[ctrlp]: https://github.com/kien/ctrlp.vim
 [nerdtree]: https://github.com/scrooloose/nerdtree
 [MiniBufExplorer]: https://github.com/fholgado/minibufexpl.vim
 [ar]: https://github.com/mitsuhiko
