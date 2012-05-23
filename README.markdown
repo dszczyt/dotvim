@@ -51,7 +51,8 @@ Utilities for text editing and programming:
 - [surround][surround] text with stuff
 - [repeat][repeat] any command
 - Comment text with [commentary][commentary]
-- Text snippets with [snipmate][snipmate]
+- Text snippets with [snipmate][snipmate], including a bunch of [ready to use
+  snippets][snippets] ([tlib][] and [mw-utils][] are required for snipmate)
 - Tab key completion powered by [supertab][supertab]
 - Graphical undo and redo with [Gundo][gundo]
 - Check syntax with [syntastic][syntastic]
@@ -123,7 +124,10 @@ What remains to be done in this configuration:
 [surround]: https://github.com/tpope/vim-surround
 [repeat]: https://github.com/tpope/vim-repeat
 [commentary]: https://github.com/tpope/vim-commentary
-[snipmate]: https://github.com/msanders/snipmate.vim
+[snipmate]: https://github.com/garbas/vim-snipmate
+[snippets]: https://github.com/honza/snipmate-snippets
+[tlib]: https://github.com/tomtom/tlib_vim
+[mw-utils]: https://github.com/MarcWeber/vim-addon-mw-utils
 [supertab]: https://github.com/ervandew/supertab
 [gundo]: https://github.com/sjl/gundo.vim
 [syntastic]: https://github.com/scrooloose/syntastic
