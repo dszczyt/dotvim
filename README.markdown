@@ -56,6 +56,7 @@ Utilities for text editing and programming:
 - Diff and merge in three dimensions with [splice][]
 - Preview all sorts of markup with [Hammer][] (requires `gem install
   github-markup tilt`)
+- Automatically end structures in Ruby, Vim and shell with [endwise][]
 
 ### Python support
 
@@ -127,6 +128,7 @@ What remains to be done in this configuration:
 [ack]: https://github.com/mileszs/ack.vim
 [splice]: https://github.com/sjl/splice.vim
 [hammer]: https://github.com/matthias-guenther/hammer.vim
+[endwise]: https://github.com/tpope/vim-endwise
 [python-indent]: http://www.vim.org/scripts/script.php?script_id=974
 [python-syntax]: http://www.vim.org/scripts/script.php?script_id=790
 [flake8]: http://pypi.python.org/pypi/flake8

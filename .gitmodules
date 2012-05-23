@@ -82,3 +82,6 @@
 [submodule "bundle/hammer"]
 	path = bundle/hammer
 	url = https://github.com/matthias-guenther/hammer.vim.git
+[submodule "bundle/endwise"]
+	path = bundle/endwise
+	url = https://github.com/tpope/vim-endwise
