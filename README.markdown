@@ -36,7 +36,8 @@ Integrate various VCS into vim:
 
 - Highlight git configuration files with [git-vim][]
 - `git` from within Vim with [fugitive][]
-- Create gists from within Vim with [gist-vim][]
+- Create gists from within Vim with [gist-vim][] (requires [curl][] and
+  [webapi-vim][])
 
 ### Editing and programming
 
@@ -114,6 +115,8 @@ What remains to be done in this configuration:
 [git-vim]: https://github.com/tpope/vim-git
 [fugitive]: https://github.com/tpope/vim-fugitive
 [gist-vim]: https://github.com/mattn/gist-vim
+[curl]: http://curl.haxx.se/
+[webapi-vim]: https://github.com/mattn/webapi-vim
 [surround]: https://github.com/tpope/vim-surround
 [repeat]: https://github.com/tpope/vim-repeat
 [commentary]: https://github.com/tpope/vim-commentary
