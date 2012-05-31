@@ -172,6 +172,9 @@ elseif has("unix")
   let g:gist_clip_command = 'xclip -selection clipboard'
 endif
 
+" enable Ctrlp extensions
+let g:ctrlp_extensions = ['tag', 'buffertag']
+
 " Colorcolumns
 if version >= 703
   augroup colorcolums
