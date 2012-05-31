@@ -13,7 +13,8 @@ I'm using the following plugins (managed with [Pathogen][] of course):
 
 Some nice extensions to the user interface:
 
-- Open files and buffer super-fast and super-easy with [ctrlp][]
+- Open files and buffer super-fast and super-easy with [ctrlp][] (with `tags`
+  and `buffertag` extensions enabled for easy tag browsing)
 - Explore files and projects with [NerdTree][]
 
 The default color scheme is [Solarized light][solarized], a nice low-contrast
@@ -35,7 +36,8 @@ generally equivalent in appearance, but less fancy in my opinion.
 Integrate various VCS into vim:
 
 - Highlight git configuration files with [git-vim][]
-- `git` from within Vim with [fugitive][]
+- `git` from within Vim with [fugitive][] (use together with [ctags][] for
+  [effortless tag browsing][ctags-git])
 - Create gists from within Vim with [gist-vim][] (requires [curl][] and
   [webapi-vim][])
 
@@ -114,6 +116,8 @@ What remains to be done in this configuration:
 [inconsolata]: http://en.wikipedia.org/wiki/Inconsolata
 [git-vim]: https://github.com/tpope/vim-git
 [fugitive]: https://github.com/tpope/vim-fugitive
+[ctags]: http://ctags.sourceforge.net/
+[ctags-git]: http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
 [gist-vim]: https://github.com/mattn/gist-vim
 [curl]: http://curl.haxx.se/
 [webapi-vim]: https://github.com/mattn/webapi-vim
