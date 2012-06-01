@@ -226,6 +226,8 @@ augroup END
 augroup filetype_latex
   autocmd FileType tex setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
   autocmd FileType tex setlocal iskeyword+=:
+  autocmd FileType tex setlocal formatoptions+=qt
+  autocmd FileType tex setlocal textwidth=80
 augroup END
 " Make VIM use LaTeX suite
 let g:tex_flavor='latex'
