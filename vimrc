@@ -134,9 +134,15 @@ else
   set number
 endif
 
-" Tab Settings
-set smarttab
+" Tab, space and wrapping settings
 set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set wrap
+set textwidth=80
+set formatoptions=qrnlc
+set colorcolumn=+1
 
 " Better Search
 set hlsearch
@@ -175,20 +181,9 @@ endif
 " enable Ctrlp extensions
 let g:ctrlp_extensions = ['tag', 'buffertag']
 
-" Colorcolumns
-if version >= 703
-  augroup colorcolums
-    autocmd FileType * setlocal colorcolumn=0
-    autocmd FileType python,c,cpp,javascript setlocal colorcolumn=79
-  augroup END
-endif
-
 " file types
 " Python
 augroup filetype_python
-  autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
-  autocmd FileType python setlocal formatoptions+=croq
-  autocmd FileType python setlocal textwidth=79
   " Python completion
   autocmd FileType python set omnifunc=pythoncomplete#Complete
 augroup END
@@ -211,23 +206,20 @@ endif
 
 " Ruby
 augroup filetype_ruby
-  autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2
 augroup END
 
 " RST
 augroup filetype_rst
   autocmd BufNewFile,BufRead *.txt setlocal ft=rst
-  autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
-  autocmd FileType rst setlocal formatoptions+=nqt
-  autocmd FileType rst setlocal textwidth=80
+  autocmd FileType rst setlocal formatoptions+=t
 augroup END
 
 " LaTeX with LaTeX suite
 augroup filetype_latex
-  autocmd FileType tex setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd FileType tex setlocal shiftwidth=2 softtabstop=2
   autocmd FileType tex setlocal iskeyword+=:
-  autocmd FileType tex setlocal formatoptions+=qt
-  autocmd FileType tex setlocal textwidth=80
+  autocmd FileType tex setlocal formatoptions+=t
 augroup END
 " Make VIM use LaTeX suite
 let g:tex_flavor='latex'
@@ -243,52 +235,44 @@ endif
 
 " Markdown
 augroup filetype_markdown
-  autocmd FileType markdown setlocal formatoptions+=nqt
-  autocmd FileType markdown setlocal textwidth=80
+  autocmd FileType markdown setlocal formatoptions+=t
 augroup END
 
 " CSS
 augroup filetype_css
-  autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+  autocmd FileType css setlocal shiftwidth=4 softtabstop=4
 augroup END
 
 " HTML
 augroup filetype_html
-  autocmd FileType html setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd FileType html setlocal shiftwidth=2 softtabstop=2
 augroup END
 
 " JavaScript
 augroup filetype_javascript
-  autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
 augroup END
 
 " CoffeeScript
 augroup filetype_coffeescript
-  autocmd FileType coffee setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd FileType coffee setlocal shiftwidth=2 softtabstop=2
 augroup END
 
 " XML
 augroup filetype_xml
-  autocmd FileType xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd FileType xml setlocal shiftwidth=2 softtabstop=2
 augroup END
 
 " ZSH
 augroup filetype_zsh
-  autocmd FileType zsh setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
+  autocmd FileType zsh setlocal shiftwidth=2 softtabstop=2
 augroup END
 
 " VIM
 augroup filetype_vim
-  autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=8 softtabstop=2
+  autocmd FileType vim setlocal shiftwidth=2 softtabstop=2
 augroup END
 
 " CMake
 augroup filetype_cmake
   autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
-augroup END
-
-" C/C++
-augroup filetype_c
-  autocmd FileType c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-  autocmd FileType cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-augroup END
