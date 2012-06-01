@@ -184,6 +184,8 @@ let g:ctrlp_extensions = ['tag', 'buffertag']
 " file types
 " Python
 augroup filetype_python
+  " PEP 8 limits lines to 79 characters
+  autocmd FileType python set textwidth=79
   " Python completion
   autocmd FileType python set omnifunc=pythoncomplete#Complete
 augroup END
