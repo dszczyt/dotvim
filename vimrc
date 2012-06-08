@@ -95,6 +95,9 @@ nmap <leader>c <Plug>Commentary
 nmap <leader>C <Plug>CommentaryLine
 nmap <leader>cu <Plug>CommentaryUndo
 
+" manage the Git index
+nnoremap <leader>d :Gdiff
+
 " edit vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 
