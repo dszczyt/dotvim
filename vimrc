@@ -171,6 +171,9 @@ let g:SuperTabDefaultCompletionType = "context"
 " of all completions automatically
 set completeopt=preview,menuone,longest
 
+" prevent flooding with fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
 " detect filetypes in gist and open new gists in browser
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
