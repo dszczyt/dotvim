@@ -16,11 +16,13 @@ let maplocalleader="-"
 " syntax highlighting
 syntax on
 colorscheme solarized
-set background=light
-if has("gui_running") && has("mac")
+if has("gui_running")
+  set background=light
   set guifont=Consolas:h13
-  " lets get fullscreen
   set fuoptions=maxvert,maxhorz
+else
+  " Use a dark background for terminal Vim
+  set background=dark
 endif
 
 " no toolbar in GUI
