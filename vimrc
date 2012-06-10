@@ -284,3 +284,4 @@ augroup END
 " CMake
 augroup filetype_cmake
   autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
+augroup END
