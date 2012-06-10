@@ -1,4 +1,4 @@
-" no compatibility to old vis, let's get a decent editor
+" No compatibility to old vis, let's get a decent editor
 set nocompatible
 set backspace=indent,eol,start
 
@@ -6,14 +6,14 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-" enable file types
+" Enable file types
 filetype plugin indent on
 
-" re-map the leader key
+" Re-map the leader key
 let mapleader=","
 let maplocalleader="-"
 
-" syntax highlighting
+" Syntax highlighting
 syntax on
 colorscheme solarized
 if has("gui_running")
@@ -25,43 +25,43 @@ else
   set background=dark
 endif
 
-" no toolbar in GUI
+" No toolbar in GUI
 set guioptions-=T
 
-" set terminal title
-" enable automatic title setting for terminals
+" Set terminal title
+" Enable automatic title setting for terminals
 set title
 set titleold="Terminal"
 set titlestring=%F
 
-" hide buffers instead of closing them
+" Hide buffers instead of closing them
 set hidden
 
-" show line and column in status bar
+" Show line and column in status bar
 set ruler
 " Highlight cursor line
 set cursorline
 set ttyfast
 
-" customize completion in the wildmenu
+" Customize completion in the wildmenu
 set wildmenu
 set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
 set wildmode=list:full
 
-" auto indentation
+" Auto indentation
 set autoindent
 
 " let's get normal
 inoremap jk <esc>
 inoremap <esc> <nop>
 
-" disable arrow keys to teach me how to use Vim properly
+" Disable arrow keys to teach me how to use Vim properly
 noremap <Down> <nop>
 noremap <Up> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
-" quick window switching
+" Quick window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -71,7 +71,7 @@ nnoremap <C-l> <C-w>l
 nnoremap Q gqip
 vnoremap Q gq
 
-" toggle between relative and absolute line numbers
+" Toggle between relative and absolute line numbers
 function! ToggleRelativeAbsoluteNumber()
   if &number
     set relativenumber
@@ -86,19 +86,19 @@ endfunction
 " Easy acking
 nnoremap <leader>a :Ack
 
-" buffer exploration
+" Buffer exploration
 nnoremap <leader>b :MiniBufExplorer<CR>
 
-" commenting with commentary
+" Commenting with commentary
 xmap <leader>c <Plug>Commentary
 nmap <leader>c <Plug>Commentary
 nmap <leader>C <Plug>CommentaryLine
 nmap <leader>cu <Plug>CommentaryUndo
 
-" manage the Git index
+" Manage the Git index
 nnoremap <leader>d :Gdiff
 
-" edit vimrc
+" Edit vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 
 " Easy gitting
@@ -106,7 +106,7 @@ nnoremap <leader>g :Gstatus<CR>
 " Easy gisting
 nnoremap <leader>G :Gist
 
-" toggle between number and relative number on ,l
+" Toggle between number and relative number on ,l
 nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
 
 " Quit window on <leader>q
@@ -115,7 +115,7 @@ nnoremap <leader>q :q<CR>
 " Easy undoing
 nnoremap <leader>u :GundoToggle<CR>
 
-" nerdy trees
+" Nerdy trees
 nnoremap <leader>t :NERDTree<CR>
 
 " Remove trailing whitespace on <leader>S
@@ -128,7 +128,7 @@ set laststatus=2
 set statusline=[%l,%v\ %P%M]\ %f\ %y%r%h%w%q\ (%{&ff})
 " Git status in status line
 set statusline+=\ %{fugitive#statusline()}
-" syntastic errors in status line
+" Syntastic errors in status line
 set statusline+=\ %#warningmsg#\ %{SyntasticStatuslineFlag()}%*
 set showcmd
 if version >= 703
@@ -151,43 +151,43 @@ set colorcolumn=+1
 set hlsearch
 set incsearch
 
-" utf-8 default encoding
+" Utf-8 default encoding
 set enc=utf-8
 
 " Prefer unix over windows over os9 formats
 set fileformats=unix,dos,mac
 
-" don't bell or blink
+" Don't bell or blink
 set noerrorbells
 set vb t_vb=
 
-" keep some more lines for scope
+" Keep some more lines for scope
 set scrolloff=5
 
-" context-sensitive completion
+" Context-sensitive completion
 let g:SuperTabDefaultCompletionType = "context"
 " Enable preview (e.g. pydoc for Python completion) and popup menu (even for a
 " single match to always see the preview) and insert the longest common prefix
 " of all completions automatically
 set completeopt=preview,menuone,longest
 
-" prevent flooding with fugitive buffers
+" Prevent flooding with fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
-" detect filetypes in gist and open new gists in browser
+" Detect filetypes in gist and open new gists in browser
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
-" configure clipboard command for :Gist -c
+" Configure clipboard command for :Gist -c
 if has("mac")
   let g:gist_clip_command = 'pbcopy'
 elseif has("unix")
   let g:gist_clip_command = 'xclip -selection clipboard'
 endif
 
-" enable Ctrlp extensions
+" Enable Ctrlp extensions
 let g:ctrlp_extensions = ['tag', 'buffertag']
 
-" file types
+" File types
 " Python
 augroup filetype_python
   " PEP 8 limits lines to 79 characters
@@ -195,9 +195,9 @@ augroup filetype_python
   " Python completion
   autocmd FileType python set omnifunc=pythoncomplete#Complete
 augroup END
-" highlight as much as possible
+" Highlight as much as possible
 let python_highlight_all=1
-" code completion for modules in the current virtualenv (only if vim is
+" Code completion for modules in the current virtualenv (only if vim is
 " started from within a virtualenv)
 if has("python")
   py << EOF
