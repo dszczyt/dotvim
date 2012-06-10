@@ -18,8 +18,12 @@ syntax on
 colorscheme solarized
 if has("gui_running")
   set background=light
-  set guifont=Consolas:h13
   set fuoptions=maxvert,maxhorz
+  if has("mac")
+    set guifont=Menlo:h13
+  else
+    set guifont=DejaVuh\ Sans\ Mono\ 10
+  endif
 else
   " Use a dark background for terminal Vim
   set background=dark

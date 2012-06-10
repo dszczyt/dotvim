@@ -26,10 +26,8 @@ I've installed a bunch of other schemes, but hardly use them:
 - `summerfruit`, `myterm` and `pyte` (all also taken from [Armin
   Ronacher's][ar] [vim configuration][arvim])
 
-The font used is [Consolas][], a proprietary font from Microsoft that ships with
-Visual Studio and probably other Microsoft applications, too. If you prefer a
-free font, that a look at [Inconsolata][], which is influenced by Consolas. It
-is generally equivalent in appearance, but less fancy in my opinion.
+The GUI font used is [Menlo][] on OS X, and [DejaVu Sans Mono][dejavu] on other
+systems.
 
 ### Version control
 
@@ -111,8 +109,8 @@ What remains to be done in this configuration:
 [solarized]: https://github.com/altercation/vim-colors-solarized
 [inkpot]: https://github.com/ciaranm/inkpot
 [zenburn]: https://github.com/jnurmine/Zenburn
-[consolas]: http://en.wikipedia.org/wiki/Consolas
-[inconsolata]: http://en.wikipedia.org/wiki/Inconsolata
+[menlo]: http://en.wikipedia.org/wiki/Menlo_(typeface)
+[dejavu]: http://en.wikipedia.org/wiki/DejaVu_fonts
 [git-vim]: https://github.com/tpope/vim-git
 [fugitive]: https://github.com/tpope/vim-fugitive
 [ctags]: http://ctags.sourceforge.net/
