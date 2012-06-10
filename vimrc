@@ -39,10 +39,8 @@ set hidden
 
 " show line and column in status bar
 set ruler
-if has("gui_running")
-  " highlight cursor line in GUI
-  set cursorline
-endif
+" Highlight cursor line
+set cursorline
 set ttyfast
 
 " customize completion in the wildmenu
