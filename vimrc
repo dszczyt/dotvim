@@ -46,8 +46,11 @@ set ttyfast
 
 " Customize completion in the wildmenu
 set wildmenu
-set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif,*$py.class,*.class
 set wildmode=list:full
+" ignore various file types when completing
+set wildignore+=*.o,*/build/*
+set wildignore+=*.class
+set wildignore+=*.pyc,*/.tox/*,*/dist/*,*/build/*,*/*.egg-info/*
 
 " Auto indentation
 set autoindent
