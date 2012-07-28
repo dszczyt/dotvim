@@ -279,8 +279,3 @@ augroup END
 augroup filetype_vim
   autocmd FileType vim setlocal shiftwidth=2 softtabstop=2
 augroup END
-
-" CMake
-augroup filetype_cmake
-  autocmd BufNewFile,BufRead CMakeLists.txt setlocal ft=cmake
-augroup END
