@@ -195,9 +195,9 @@ let g:ctrlp_extensions = ['tag', 'buffertag']
 " Python
 augroup filetype_python
   " PEP 8 limits lines to 79 characters
-  autocmd FileType python set textwidth=79
+  autocmd FileType python setlocal textwidth=79
   " Python completion
-  autocmd FileType python set omnifunc=pythoncomplete#Complete
+  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 augroup END
 " Highlight as much as possible
 let python_highlight_all=1
