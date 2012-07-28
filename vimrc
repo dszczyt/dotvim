@@ -245,11 +245,6 @@ elseif has("unix")
   let g:Tex_ViewRule_pdf = 'xdg-open'
 endif
 
-" Markdown
-augroup filetype_markdown
-  autocmd FileType markdown setlocal formatoptions+=t
-augroup END
-
 " CSS
 augroup filetype_css
   autocmd FileType css setlocal shiftwidth=4 softtabstop=4
